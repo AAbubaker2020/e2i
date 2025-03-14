@@ -246,7 +246,7 @@ export default function ContactPage() {
                 <CardHeader>
                   <CardTitle>Partner Opportunities</CardTitle>
                   <CardDescription>
-                    Collaborate with talented students and faculty to address your organization's challenges
+                    Collaborate with talented students and faculty to address your organization&apos;s challenges
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -342,7 +342,7 @@ export default function ContactPage() {
                     </div>
                     <h3 className="text-2xl font-bold text-[#333333] mb-2">Thank You!</h3>
                     <p className="text-[#333333] mb-6">
-                      Your message has been sent successfully. We'll get back to you as soon as possible.
+                      Your message has been sent successfully. We&apos;ll get back to you as soon as possible.
                     </p>
                     <Button
                       onClick={() => setFormSubmitted(false)}

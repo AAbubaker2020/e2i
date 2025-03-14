@@ -92,9 +92,9 @@ export default function ImpactPage() {
                       </p>
                       <div className="bg-white p-4 border-l-4 border-[#990000] mb-4">
                         <p className="italic text-[#333333]">
-                          "The students brought fresh perspectives and technical skills that helped us reimagine our
+                          &quot;The students brought fresh perspectives and technical skills that helped us reimagine our
                           approach to maritime safety. Their work has directly influenced our resource allocation
-                          strategy."
+                          strategy.&quot;
                         </p>
                         <p className="font-bold text-[#333333] mt-2">— Commander Sarah Johnson, US Coast Guard</p>
                       </div>
@@ -136,9 +136,9 @@ export default function ImpactPage() {
                       </p>
                       <div className="bg-white p-4 border-l-4 border-[#990000] mb-4">
                         <p className="italic text-[#333333]">
-                          "The innovative approach these students brought to our logistics challenges has transformed
+                        &quot;The innovative approach these students brought to our logistics challenges has transformed
                           our operations. Their solution combines technical sophistication with practical
-                          implementation."
+                          implementation.&quot;
                         </p>
                         <p className="font-bold text-[#333333] mt-2">
                           — Colonel Robert Martinez, US Army Logistics Command
@@ -180,8 +180,8 @@ export default function ImpactPage() {
                       </p>
                       <div className="bg-white p-4 border-l-4 border-[#990000] mb-4">
                         <p className="italic text-[#333333]">
-                          "The students combined technical expertise with a deep understanding of donor psychology.
-                          Their solution has revolutionized how we engage with our supporters."
+                        &quot;The students combined technical expertise with a deep understanding of donor psychology.
+                          Their solution has revolutionized how we engage with our supporters.&quot;
                         </p>
                         <p className="font-bold text-[#333333] mt-2">
                           — Jennifer Williams, Director of Development, IU Foundation
@@ -225,9 +225,9 @@ export default function ImpactPage() {
                       </p>
                       <div className="bg-white p-4 border-l-4 border-[#990000] mb-4">
                         <p className="italic text-[#333333]">
-                          "The predictive maintenance solution developed by these students has significantly improved
+                        &quot;The predictive maintenance solution developed by these students has significantly improved
                           our operational efficiency. Their ability to translate complex data into actionable insights
-                          is impressive."
+                          is impressive.&quot;
                         </p>
                         <p className="font-bold text-[#333333] mt-2">
                           — Dr. Michael Chen, Technical Director, Crane Naval Base
