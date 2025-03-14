@@ -2,15 +2,27 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="w-full border-t bg-white py-6">
+    <footer className="w-full border-t bg-[#EXACT_COLOR] py-6">
+
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-4">
+        <div className="space-y-4">
+          <div className="flex items-center space-x-2">
+            <img src="/iu_logo.png" alt="IU Logo" className="h-8 w-8" />
             <h3 className="text-lg font-bold text-[#990000]">Experience to Impact</h3>
-            <p className="text-sm text-[#333333]">
-              Transforming education through high-impact experiential learning at Indiana University
-            </p>
           </div>
+          <p className="text-sm text-[#333333]">
+            Transforming education through high-impact experiential learning at Indiana University
+          </p>
+        </div>
+
+
+
+          
+
+
+
+          
 
           <div>
             <h4 className="text-sm font-bold text-[#333333] mb-4">Quick Links</h4>
