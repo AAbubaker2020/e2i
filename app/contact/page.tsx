@@ -31,21 +31,23 @@ export default function ContactPage() {
     const message = formData.get("message") as string
 
     try {
-      await sendEmail({ name, email, subject, message })
-      setFormSubmitted(true)
+      await sendEmail({ name, email, subject, message });
+      setFormSubmitted(true);
       toast({
         title: "Message Sent",
         description: "Thank you for your message. We'll get back to you soon.",
-      })
+      });
     } catch (error) {
+      console.error("Email sending error:", error); // ✅ Logs the error to the console
       toast({
         title: "Error",
         description: "There was a problem sending your message. Please try again.",
         variant: "destructive",
-      })
+      });
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
+    
   }
 
   return (
