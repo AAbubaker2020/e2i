@@ -39,7 +39,7 @@ export default function AboutPage() {
               </p>
               <p className="text-lg text-[#333333] mb-4">
                 Through structured courses and hands-on projects, students develop the skills needed to address complex
-                challenges in today's rapidly changing world. By working directly with industry partners and public
+                challenges in today&apos;s rapidly changing world. By working directly with industry partners and public
                 sector organizations, students gain invaluable experience while making meaningful contributions to real
                 problems.
               </p>
