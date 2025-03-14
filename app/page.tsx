@@ -1,101 +1,154 @@
-import Image from "next/image";
+import Link from "next/link"
+import Image from "next/image"
+import { ArrowRight, ChevronDown } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex flex-col min-h-screen">
+      {/* Hero Section */}
+      <section className="relative w-full h-[80vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/e2i.png?height=1080&width=1920"
+            alt="Indiana University Campus"
+            fill
+            className="object-cover brightness-[0.7]"
+            priority
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="container relative z-10 px-4 md:px-6 flex flex-col items-center text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-white mb-4">
+            Experience to Impact
+          </h1>
+          <p className="text-xl md:text-2xl text-white max-w-3xl mb-8">
+            Transforming education through high-impact experiential learning at Indiana University
+          </p>
+          <Link href="/about">
+            <Button className="bg-[#990000] hover:bg-[#7A0000] text-white px-8 py-6 text-lg">
+              Learn More <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
+        </div>
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <ChevronDown className="h-8 w-8 text-white" />
+        </div>
+      </section>
+
+      {/* Mission Statement Section */}
+      <section className="py-16 bg-[#F7F6F5]">
+        <div className="container px-4 md:px-6">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-[#333333] mb-6">Our Mission</h2>
+            <p className="text-xl text-[#333333] mb-8">
+              Experience to Impact provides high-impact experiential learning opportunities that bridge the gap between
+              academic knowledge and real-world application. We empower students to solve complex problems through
+              interdisciplinary collaboration and data-driven approaches.
+            </p>
+            <div className="flex justify-center">
+              <Link href="/program-structure">
+                <Button
+                  variant="outline"
+                  className="border-[#990000] text-[#990000] hover:bg-[#990000] hover:text-white"
+                >
+                  Explore Our Program
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Components Section */}
+      <section className="py-16">
+        <div className="container px-4 md:px-6">
+          <h2 className="text-3xl font-bold tracking-tight text-center text-[#333333] mb-12">Key Program Components</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Foundations for Impact */}
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-4 border-[#990000]">
+              <h3 className="text-xl font-bold text-[#333333] mb-4">Foundations for Impact</h3>
+              <p className="text-[#333333]">
+                An on-ramp course that introduces students to data-driven problem-solving methodologies and prepares
+                them for interdisciplinary collaboration.
+              </p>
+            </div>
+
+            {/* Core Courses */}
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-4 border-[#990000]">
+              <h3 className="text-xl font-bold text-[#333333] mb-4">Core Courses</h3>
+              <p className="text-[#333333]">
+                Hands-on, interdisciplinary courses including Data Science in Practice and Innovate for Impact,
+                featuring real-world applications and industry partnerships.
+              </p>
+            </div>
+
+            {/* Impact Accelerator */}
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-t-4 border-[#990000]">
+              <h3 className="text-xl font-bold text-[#333333] mb-4">Impact Accelerator</h3>
+              <p className="text-[#333333]">
+                An off-ramp course that prepares students to apply their skills to high-impact challenges in their
+                future careers and communities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Collaboration Section */}
+      <section className="py-16 bg-[#F7F6F5]">
+        <div className="container px-4 md:px-6">
+          <h2 className="text-3xl font-bold tracking-tight text-center text-[#333333] mb-12">
+            Collaborative Initiative
+          </h2>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+            <div className="text-center">
+              <div className="w-48 h-48 mx-auto mb-4 relative">
+                <Image
+                  src="/luddy.png?height=200&width=200"
+                  alt="Luddy School Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-[#333333] mb-2">Luddy School</h3>
+              <p className="text-[#333333]">Informatics, Computing, and Engineering</p>
+            </div>
+            <div className="text-center">
+              <div className="w-48 h-48 mx-auto mb-4 relative">
+                <Image
+                  src="/hls.png?height=200&width=200"
+                  alt="Hamilton Lugar School Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-[#333333] mb-2">Hamilton Lugar School</h3>
+              <p className="text-[#333333]">Global and International Studies</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-[#990000] text-white">
+        <div className="container px-4 md:px-6 text-center">
+          <h2 className="text-3xl font-bold tracking-tight mb-6">Ready to Make an Impact?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Join us in transforming education through experiential learning and real-world problem solving.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
+              <Button className="bg-white text-[#990000] hover:bg-gray-100 px-8">Get Involved</Button>
+            </Link>
+            <Link href="/impact">
+              <Button variant="outline" className="bg-white text-[#990000] hover:bg-gray-100 px-8">
+                See Our Impact
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
-  );
+  )
 }
+
